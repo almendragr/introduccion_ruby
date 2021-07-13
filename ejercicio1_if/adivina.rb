@@ -9,7 +9,6 @@ intentos = 1
 begin oculto != num
     puts "Ingrese valor"
     num = gets.to_i
-    #.to_i indica que debe ser un numero
     if num == oculto
         puts "GANASTE con #{intentos} intentos, FELICIDADES!"
     end
