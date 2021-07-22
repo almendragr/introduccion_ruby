@@ -10,16 +10,15 @@ class Juego
         @palabra_secreta = GeneradorPalabras.generar
         @vidas = 5
     end
-
+    puts "Bienvenido al ahorcado"
     def comenzar
-        puts "Bienvenido al ahorcado"
 
         guiones = cambiar_letras_a_guiones_1
         puts guiones
         
         while guiones.gsub(" ", "") != @palabra_secreta and @vidas > 0
             #gsub esta reemplazando el espacio por nada
-            puts "vidas: #{@vidas}"
+            puts "Te quedan solo #{@vidas} vidas"
             letra = gets.chomp
             letra_encontrada = false
 
