@@ -4,14 +4,18 @@
 #1. Promedio de ventas del día
 #2. Suma total de toda la venta del día
 
-puts "Ingrese el valor de sus ventas diarias"
+suma=0
+venta=0
+num = 0
+opcion=""
+while opcion != "-1"
+    puts "Ingrese el valor de sus ventas diarias"
+    venta = gets.chomp.to_i
+    suma = suma + venta
+    num = num+1
+    puts "Para agregar otro monto presione enter, Para salir digite -1"
 
-venta=gets.to_i
-begin venta == 0
-    suma =venta + venta
+    opcion = gets.chomp
 end
-promedio+=1  
-end while venta == -1 
-
 puts "El total de sus ventas es: #{suma}"
-puts "El total de sus ventas es: #{promedio}"
+puts "El total de sus ventas es: #{suma/num}"
