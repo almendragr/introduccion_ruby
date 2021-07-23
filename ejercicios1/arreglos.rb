@@ -76,3 +76,5 @@ while opcion != salir
         puts "Escoge una opcion valida"
     end
 end
+
+#lista.select 
